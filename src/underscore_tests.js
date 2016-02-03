@@ -20,16 +20,27 @@ var _ = { };
       return array[0];
     }
     else {
-      return n[0];
+      for (var i = 0; i <= n; i++)
+      return array[i];
     }
   };
 
-  // not completely right
+  // not right
 
   // Like first, but for the last elements. If n is undefined, return just the
   // last element.
   _.last = function(array, n) {
+    if (n === undefined) {
+      return array[0];
+    }
+    else {
+      for (var i = 0; i <= n; i++) {
+        return array[i];
+      }
+    }
   };
+
+  // not right
 
   // Call iterator(value, key, collection) for each element of collection.
   // Accepts both arrays and objects.
